@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'NotoSans';
+  font-style:  regular;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./NotoSans.woff2') format("woff2"),
+       url('./NotoSans.woff') format("woff");
+}
+
+@font-face {
+  font-family: 'FiraSansCondensed';
+  font-style:  bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./FiraSansCondensed-Bold.woff2') format("woff2"),
+       url('./FiraSansCondensed-Bold.woff') format("woff");
+}
+
