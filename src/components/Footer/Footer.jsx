@@ -1,10 +1,20 @@
 import "./footer.scss";
+import { useState } from "react";
 const Footer = () => {
+  //Футер имеет разный фон, в зависимости  от страницы, пока делаю стейт, потом завязать его на юзЛокейшон
+  const [isWhiteFooter, setWhiteFooter] = useState(false);
+
   return (
-    <footer className="footer">
+    <footer className={isWhiteFooter ? "footer_white footer" : "footer"}>
       <section className="footer__content">
         <div className="footer__item">
-          <h1 className="footer__title">
+          <h1
+            className={
+              isWhiteFooter
+                ? "footer__title_white footer__title"
+                : "footer__title"
+            }
+          >
             Балтымский
             <br /> Кирпичный&nbsp;ЗАВОД
           </h1>
