@@ -1,0 +1,33 @@
+@mixin font {
+  font-family: Inter, sans-serif;
+}
+
+@mixin text-medium {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.11;
+}
+
+@mixin input {
+  width: 168px;
+  height: 40px;
+  background-color: $input-backgroud;
+  border: none;
+  border-radius: 24px;
+  padding: 10px;
+  cursor: pointer;
+
+  &::placeholder {
+    color: $input-placeholder;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    border: 1px green solid;
+  }
+}

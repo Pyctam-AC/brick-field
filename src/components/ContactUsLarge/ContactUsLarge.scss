@@ -1,0 +1,64 @@
+@import "../../styles/abstract/constants.scss";
+@import "../../styles/abstract/mixins.scss";
+
+.contact-us-large {
+  background-color: $main-orange;
+  display: flex;
+  position: relative;
+
+  width: 1128px;
+  height: 309px;
+
+  flex-direction: column;
+  align-items: center;
+  padding: 57px 0;
+
+  &__title {
+    @include font;
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 500px;
+    margin: 0 0 28px;
+  }
+
+  &__subtitle {
+    @include text-medium;
+    margin: 0 0 24px;
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 747px;
+  }
+  &__input {
+    @include input;
+    @include text-medium;
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  &__submit-btn {
+    @include font;
+    @include text-medium;
+    width: 168px;
+    height: 40px;
+    border: none;
+    border-radius: 24px;
+    background-color: $button-backgroud;
+    cursor: pointer;
+    transition: 1s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__checkbox-area {
+    display: flex;
+    margin-top: 32px;
+  }
+}
