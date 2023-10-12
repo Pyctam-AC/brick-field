@@ -6,7 +6,12 @@ import { validateEmail } from "../../utils/utils";
 
 export const ContactUsLarge = () => {
   const [infoMessage, setInfoMessage] = useState("");
-  const [data, setData] = useState({ name: "", phone: "", isChecked: false });
+  const [data, setData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    isChecked: false,
+  });
 
   const onChange = (e) => {
     const { name, value } = e.target;
