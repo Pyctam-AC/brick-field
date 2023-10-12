@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className={isWhiteFooter ? "footer_white footer" : "footer"}>
       <section className="footer__content">
         <div className="footer__item">
-          <h1
+          <p
             className={
               isWhiteFooter
                 ? "footer__title_white footer__title"
@@ -17,11 +17,11 @@ const Footer = () => {
           >
             Балтымский
             <br /> Кирпичный&nbsp;ЗАВОД
-          </h1>
-          <h3 className="footer__address">
+          </p>
+          <p className="footer__address">
             <b>Екатеринбург,</b> <br /> пос.&nbsp;Садовый,
             <br /> ул.&nbsp;Валимхаматова, д.&nbsp;36{" "}
-          </h3>
+          </p>
         </div>
         <div className="footer__item">
           <p className="footer__schedule">

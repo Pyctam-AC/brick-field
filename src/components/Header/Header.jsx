@@ -15,10 +15,10 @@ const Header = () => {
             Балтымский
             <br /> Кирпичный&nbsp;ЗАВОД
           </h1>
-          <h3 className="header__address">
+          <p className="header__address">
             <b>Екатеринбург,</b> <br /> пос.&nbsp;Садовый,
             <br /> ул.&nbsp;Валимхаматова, д.&nbsp;36{" "}
-          </h3>
+          </p>
         </div>
         <div className="header__item">
           <p className="header__schedule">
