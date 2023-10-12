@@ -1,15 +1,20 @@
 @import "../../styles/abstract/mixins.scss";
 
-.header {
-  background-color: #ffff;
+.footer {
+  background-color: #da9255;
   width: 100%;
+  height: 168px;
   color: #070707;
   border-bottom: 1px solid #acc0c9;
+
+  &_white {
+    background-color: #ffff;
+  }
 
   &__content {
     display: flex;
     flex-direction: row;
-    margin: 16px auto 16px auto;
+    margin: 54px auto 54px auto;
     max-width: 1128px;
     align-items: center;
     justify-content: space-between;
@@ -21,20 +26,17 @@
     align-items: center;
   }
 
-  &__logo {
-    width: 145px;
-    height: 60px;
-    margin-right: 5px;
-  }
-
   &__title {
     @include text-medium;
-    line-height: 20px;
     text-transform: uppercase;
     text-align: left;
-    color: #da9255;
+    color: #ffff;
     margin: 0;
-    margin-right: 45px;
+    margin-right: 100px;
+  }
+
+  &__title_white {
+    color: #070707;
   }
 
   &__address {
