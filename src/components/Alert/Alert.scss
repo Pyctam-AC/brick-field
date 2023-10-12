@@ -1,0 +1,34 @@
+@import "../../styles/abstract/constants.scss";
+@import "../../styles/abstract/mixins.scss";
+
+@keyframes show-message {
+  from {
+    top: -40px;
+  }
+  to {
+    top: 10px;
+  }
+}
+
+.alert {
+  @include text-medium;
+
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  top: -40px;
+  right: 10px;
+  border-radius: 10px;
+
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $alert-backgroud;
+
+  visibility: visible;
+  animation: show-message 1s ease-in-out infinite;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
