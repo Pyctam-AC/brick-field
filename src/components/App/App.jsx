@@ -1,13 +1,15 @@
 import "./App.scss";
 import Layout from "../../Layout/Layout";
-import { ContactUs } from "../ContactUsSmall/ContactUsSmall";
+import { ContactUsSmall } from "../ContactUsSmall/ContactUsSmall";
+import { ContactUsLarge } from "../ContactUsLarge/ContactUsLarge";
 
 const App = () => {
   return (
     <>
       <Layout>
         <h1>Develop</h1>
-        <ContactUs size="small" />
+        <ContactUsLarge />
+        {/* <ContactUsSmall /> */}
       </Layout>
     </>
   );

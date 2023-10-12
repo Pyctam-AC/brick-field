@@ -1,13 +1,10 @@
 import "./ContactUsSmall.scss";
 import { Alert } from "../Alert/Alert";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { PatternFormat } from "react-number-format";
 
-// компонент  принимает пропс size, который отвечает за размер и состав компонента.
-// варианты small и large
-export const ContactUs = () => {
+export const ContactUsSmall = () => {
   const [infoMessage, setInfoMessage] = useState("");
-  const [isValid, setIsValid] = useState(false);
   const [data, setData] = useState({ name: "", phone: "" });
 
   const onChange = (e) => {
@@ -27,8 +24,6 @@ export const ContactUs = () => {
     setInfoMessage("Заявка принята");
     return true;
   };
-
-  useEffect(() => {}, [data]);
 
   const closeAlert = () => {
     setInfoMessage("");
