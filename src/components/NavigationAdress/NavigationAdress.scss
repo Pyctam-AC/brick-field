@@ -1,0 +1,16 @@
+@import "../../styles/abstract/mixins.scss";
+@import "../../styles/abstract/constants.scss";
+
+.navigation-adress {
+  display: block;
+  margin: 16px auto 0;
+  text-align: start;
+  height: 32px;
+
+  &__item {
+    @include text-medium;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+  }
+}

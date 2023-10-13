@@ -13,7 +13,6 @@ const App = () => {
           <Route path="/photo" element={<PagePhoto />} />
           <Route path="*" element={<h2>Страница не найдена</h2>} />
         </Routes>
-        <h1>Develop</h1>
       </Layout>
     </>
   );
