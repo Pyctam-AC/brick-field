@@ -7,9 +7,9 @@ import brick4 from "./image/brick4.png";
 import brick5 from "./image/brick5.png";
 import brick6 from "./image/brick6.png";
 import brick7 from "./image/brick7.png";
-import { Link } from "react-router-dom";
 import { Modal } from "./components/Modal/Modal";
 import { useState } from "react";
+import { NavigationAdress } from "../../components/NavigationAdress/NavigationAdress";
 
 const imgArr = [brick1, brick2, brick3, brick4, brick5, brick6, brick7];
 export const PagePhoto = () => {
@@ -18,10 +18,7 @@ export const PagePhoto = () => {
   return (
     <>
       <section className="page-photo">
-        <Link className="page-photo__link" to="/">
-          Главная
-        </Link>
-
+        <NavigationAdress />
         <img
           className="page-photo__header-image"
           src={headerImage}
