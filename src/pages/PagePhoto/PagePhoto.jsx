@@ -1,4 +1,5 @@
 import "./PagePhoto.scss";
+import { Layout } from "../../Layout/Layout";
 import headerImage from "./image/bricks_page-photo.png";
 import brick1 from "./image/brick1.png";
 import brick2 from "./image/brick2.png";
@@ -16,7 +17,7 @@ export const PagePhoto = () => {
   const [imageForModal, setImageForShow] = useState(null);
 
   return (
-    <>
+    <Layout theme="white">
       <section className="page-photo">
         <NavigationAdress />
         <img
@@ -46,6 +47,6 @@ export const PagePhoto = () => {
           img={imageForModal}
         />
       )}
-    </>
+    </Layout>
   );
 };
