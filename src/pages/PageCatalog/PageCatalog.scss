@@ -1,0 +1,17 @@
+@import "../../styles/abstract/mixins.scss";
+.page-catalog {
+  background-color: #fff;
+  &__title {
+    @include text-large;
+    color: #070707;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    align-items: center;
+    margin: 0;
+  }
+}
