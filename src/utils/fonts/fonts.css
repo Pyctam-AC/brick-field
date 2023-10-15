@@ -20,3 +20,18 @@
     url("NotoSans-Bold.woff1") format("woff");
   font-weight: 500;
 }
+
+@font-face {
+  font-family: 'FiraSansCondensed';
+  src: url("./FiraSansCondensed-Bold.woff") format("woff2"),
+       url("./FiraSansCondensed-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Nobile';
+  src: url("./Nobile-Medium.woff") format("woff"),
+       url("./Nobile-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+

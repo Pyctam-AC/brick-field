@@ -1,0 +1,44 @@
+@import "../../styles/abstract/constants.scss";
+@import "../../styles/abstract/mixins.scss";
+
+.section-production {
+  margin: 0 auto 52px auto;
+}
+
+.production {
+  background-color: #fff;
+
+  &__title {
+    font-family: 'Nobile';
+    @include text-large;
+    color: $dark_text;
+    margin: 0 0 37px 0;
+  }
+
+  &__paragraph {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  &__text {
+    max-width: 553px;
+    padding: 28px;
+    @include text-medium;
+    color: $dark_text;
+    text-align: left;
+    background-color: #f4f3ef;
+    margin: 0 0 24px 0;
+  }
+
+  &__span {
+    margin: 0 auto;
+    display: block;
+    width: 744px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.11;
+    color: #da9255;
+  }
+}
+
