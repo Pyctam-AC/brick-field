@@ -3,18 +3,8 @@
 
 .page-photo {
   min-height: 70vh;
-  background-color: azure;
-  padding: 16px 157px 0;
+  padding: 0 157px 0;
 
-  &__link {
-    @include text-medium;
-    display: block;
-    margin: 16px auto;
-    text-align: start;
-    height: 32px;
-    text-decoration: none;
-    cursor: pointer;
-  }
   &__header-image {
     width: 1127px;
     height: 100px;
