@@ -5,7 +5,7 @@
   height: 416px;
   padding: 54px;
   display: grid;
-  grid-template-columns: min-content repeat(3, min-content);
+  grid-template-columns: 244px minmax(0px, 200px) 170px 234px;
   grid-template-rows: repeat(3, auto);
   grid-template-areas:
   "image title title title"
@@ -63,6 +63,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
   }
   &__prise {
     @include text-large;

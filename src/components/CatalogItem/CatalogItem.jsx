@@ -1,6 +1,34 @@
 import "./CatalogItem.scss";
 
 const CatalogItem = ({ item }) => {
+  const keys = [
+    "Габаритные размеры",
+    "Марка прочности",
+    "Морозостойкость",
+    "Пустотность",
+    "Теплопроводность",
+    "Средняя плотность",
+    " Количество в поддоне",
+  ];
+
+  const values = [
+    item.sizes,
+    item.endurance,
+    item.frostResistance,
+    item.voidness,
+    item.thermalConductivity,
+    item.density,
+    item.quantity,
+  ];
+
+  const table = (values) => {
+
+    for (let i=1; i<=values.length; i++){
+    console.log(values[i])}
+  }
+
+  table(values)
+
   return (
     <li className="catalog-item">
       <img
