@@ -5,12 +5,12 @@
   height: 416px;
   padding: 54px;
   display: grid;
-  grid-template-columns: min-content repeat(3, min-content);
+  grid-template-columns: 244px minmax(0px, 200px) 170px 234px;
   grid-template-rows: repeat(3, auto);
   grid-template-areas:
-  "image title title title"
-  "image keys values prise"
-  "text text text text";
+    "image title title title"
+    "image keys values prise"
+    "text text text text";
   text-align: start;
   gap: 24px;
 
@@ -32,7 +32,6 @@
     list-style: none;
     grid-area: keys;
     padding: 0;
-
   }
   &__key {
     @include text-medium;
@@ -52,7 +51,6 @@
     color: #070707;
     font-weight: 700;
     white-space: nowrap;
-
   }
   &__prise-container {
     background-color: #ffff;
@@ -64,6 +62,11 @@
     justify-content: center;
     align-items: center;
   }
+
+  &__prise-container_prise-only {
+    grid-area: keys;
+  }
+
   &__prise {
     @include text-large;
     color: #da9255;
@@ -73,6 +76,7 @@
   &__prise_black {
     color: #000;
   }
+
   &__prise-date {
     font-size: 15px;
     font-style: normal;

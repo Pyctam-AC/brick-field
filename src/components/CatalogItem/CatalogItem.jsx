@@ -1,8 +1,41 @@
 import "./CatalogItem.scss";
+import { KEYS as keys } from "../../utils/constants";
 
 const CatalogItem = ({ item }) => {
+  const values = [
+    item.sizes,
+    item.endurance,
+    item.frostResistance,
+    item.voidness,
+    item.thermalConductivity,
+    item.density,
+    item.quantity,
+  ];
+
+  const table = (values, keys) => {
+    const resVal = [];
+    const resKeys = [];
+    for (let i = 0; i <= values.length; i++) {
+      if (values[i] !== "") {
+        resVal.push(values[i]);
+        resKeys.push(keys[i]);
+      }
+    }
+    return [resVal, resKeys];
+  };
+
+  const renderList = table(values, keys);
+
+  const setClassNamePrise = () => {
+    if (renderList[0].length > 1) {
+      return "catalog-item__prise-container";
+    } else {
+      return "catalog-item__prise-container catalog-item__prise-container_prise-only";
+    }
+  };
+
   return (
-    <li className="catalog-item">
+    <li className="catalog-item" id={item.title}>
       <img
         src={item.image}
         className="catalog-item__image"
@@ -10,70 +43,24 @@ const CatalogItem = ({ item }) => {
       />
       <p className="catalog-item__title">{item.title}</p>
       <ul className="catalog-item__keys">
-        <li
-          className={
-            item.sizes ? "catalog-item__key" : "catalog-item__key_invisible"
-          }
-        >
-          Габаритные размеры
-        </li>
-        <li
-          className={
-            item.endurance ? "catalog-item__key" : "catalog-item__key_invisible"
-          }
-        >
-          Марка прочности
-        </li>
-        <li
-          className={
-            item.frostResistance
-              ? "catalog-item__key"
-              : "catalog-item__key_invisible"
-          }
-        >
-          Морозостойкость
-        </li>
-        <li
-          className={
-            item.voidness ? "catalog-item__key" : "catalog-item__key_invisible"
-          }
-        >
-          Пустотность
-        </li>
-        <li
-          className={
-            item.thermalConductivity
-              ? "catalog-item__key"
-              : "catalog-item__key_invisible"
-          }
-        >
-          Теплопроводность
-        </li>
-        <li
-          className={
-            item.density ? "catalog-item__key" : "catalog-item__key_invisible"
-          }
-        >
-          Средняя плотность
-        </li>
-        <li
-          className={
-            item.quantity ? "catalog-item__key" : "catalog-item__key_invisible"
-          }
-        >
-          Количество в поддоне
-        </li>
+        {renderList[1].map((el, i) => {
+          return (
+            <li key={i} className="catalog-item__key">
+              {el}
+            </li>
+          );
+        })}
       </ul>
       <ul className="catalog-item__values">
-        <li className="catalog-item__value">{item.sizes}</li>
-        <li className="catalog-item__value">{item.endurance}</li>
-        <li className="catalog-item__value">{item.frostResistance}</li>
-        <li className="catalog-item__value">{item.voidness}</li>
-        <li className="catalog-item__value">{item.thermalConductivity}</li>
-        <li className="catalog-item__value">{item.density}</li>
-        <li className="catalog-item__value">{item.quantity}</li>
+        {renderList[0].map((el, i) => {
+          return (
+            <li key={i} className="catalog-item__value">
+              {el}
+            </li>
+          );
+        })}
       </ul>
-      <div className="catalog-item__prise-container">
+      <div className={setClassNamePrise()}>
         <p className="catalog-item__prise">
           {item.praise}{" "}
           <span className="catalog-item__prise_black">р./ед.</span>
