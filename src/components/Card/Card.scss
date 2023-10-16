@@ -1,0 +1,25 @@
+@import "../../styles/abstract/constants.scss";
+@import "../../styles/abstract/mixins.scss";
+
+.card {
+  max-width: 168px;
+  min-height: 131px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+  &__title {
+    margin: 15px 13px 0 13px;
+    text-align: center;
+    max-width: 144px;
+    min-height: 116px;
+    color: $dark_text;
+    @include text-medium;
+  }
+
+  &__textarea {
+    background-color: #f5f4ef;
+    transform: scale(1);
+    box-shadow: inset 0px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  }
+}

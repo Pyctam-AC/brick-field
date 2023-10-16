@@ -1,0 +1,27 @@
+@import "../../styles/abstract/constants.scss";
+@import "../../styles/abstract/mixins.scss";
+
+.section-product {
+  margin: 0 auto 52px auto;
+}
+
+.product {
+  background-color: #fff;
+
+  &__title {
+    margin: 0;
+    font-family: 'Nobile';
+    @include text-large;
+    color: $dark_text;
+    margin-bottom: 36px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+
