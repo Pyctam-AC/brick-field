@@ -1,13 +1,11 @@
 import "./PageContacts.scss";
 import { Layout } from "../../Layout/Layout";
 import { ContactUsLarge } from "../../components/ContactUsLarge/ContactUsLarge";
-import { NavigationAdress } from "../../components/NavigationAdress/NavigationAdress";
 
 export const PageContacts = () => {
   return (
     <Layout theme="white">
       <section className="contacts">
-        <NavigationAdress />
         <h2 className="contacts__title">Контакты</h2>
         <div className="contacts__info-area">
           <div className="info-item">

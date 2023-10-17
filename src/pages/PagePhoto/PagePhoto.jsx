@@ -10,7 +10,6 @@ import brick6 from "./image/brick6.png";
 import brick7 from "./image/brick7.png";
 import { Modal } from "./components/Modal/Modal";
 import { useState } from "react";
-import { NavigationAdress } from "../../components/NavigationAdress/NavigationAdress";
 
 const imgArr = [brick1, brick2, brick3, brick4, brick5, brick6, brick7];
 export const PagePhoto = () => {
@@ -19,7 +18,6 @@ export const PagePhoto = () => {
   return (
     <Layout theme="white">
       <section className="page-photo">
-        <NavigationAdress />
         <img
           className="page-photo__header-image"
           src={headerImage}
