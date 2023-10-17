@@ -8,7 +8,6 @@
   gap: 20px;
 
   &__link {
-    font-family: "Nunito San";
     @include text-medium;
     color: $dark_text;
     text-decoration: none;
