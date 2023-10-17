@@ -4,13 +4,10 @@ import { Layout } from "../../Layout/Layout";
 import headerImage from "./image/bricks_page-photo.png";
 import { ContactUsLarge } from "../../components/ContactUsLarge/ContactUsLarge";
 
-import { NavigationAdress } from "../../components/NavigationAdress/NavigationAdress";
-
 export const PageDelivery = () => {
   return (
     <Layout theme="white">
       <section className="delivery">
-        <NavigationAdress />
         <img
           className="delivery__header-image"
           src={headerImage}
