@@ -17,6 +17,7 @@ export const catalogList = [
     praise: "24,30",
     date: "20.07.2023 г.",
     weight: "4,4-4,6  кг.",
+    id: 1,
   },
   {
     title: "Кирпич полуторный пустотелый",
@@ -31,6 +32,8 @@ export const catalogList = [
     praise: "18,00",
     date: "20.07.2023 г.",
     weight: "",
+    id: 2,
+
   },
   {
     title: "Кирпич одинарный полнотелый",
@@ -45,6 +48,7 @@ export const catalogList = [
     praise: "18,00",
     date: "20.07.2023 г.",
     weight: "",
+    id: 3,
   },
   {
     title: "Поддон деревянный",
@@ -59,6 +63,7 @@ export const catalogList = [
     praise: "450,00",
     date: "20.07.2023 г.",
     weight: "",
+    id: 4,
   },
 ];
 

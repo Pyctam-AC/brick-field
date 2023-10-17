@@ -35,7 +35,7 @@ const CatalogItem = ({ item }) => {
   };
 
   return (
-    <li className="catalog-item" id={item.title}>
+    <li className="catalog-item" id={item.id}>
       <img
         src={item.image}
         className="catalog-item__image"
