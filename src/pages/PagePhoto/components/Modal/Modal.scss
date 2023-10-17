@@ -20,14 +20,18 @@
   &__container {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     position: relative;
-    width: 50vw;
-    height: 50vw;
+    width: 40vw;
+    // height: 40vh;
   }
 
   &__image {
     width: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-width: 75vw;
+    max-height: 75vh;
   }
 
   &__btn-close {
