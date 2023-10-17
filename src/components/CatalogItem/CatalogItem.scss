@@ -21,6 +21,7 @@
   }
   &__title {
     @include text-large;
+    font-family: Nobile, sans-serif;
     color: #070707;
     grid-area: title;
     margin: 0;
@@ -68,11 +69,16 @@
   }
 
   &__prise {
-    @include text-large;
+    font-family: Nobile, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
     color: #da9255;
     grid-area: prise;
     margin: 0;
   }
+
   &__prise_black {
     color: #000;
   }

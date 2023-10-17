@@ -89,7 +89,7 @@ export const ContactUsLarge = () => {
           Перезвонить
         </button>
       </form>
-      <label className="contact-us-large__checkbox-area">
+      {/* <label className="contact-us-large__checkbox-area">
         <input
           type="checkbox"
           checked={data.isChecked}
@@ -98,7 +98,7 @@ export const ContactUsLarge = () => {
           }
         />{" "}
         <span>Согласие на обработку персональных данных</span>
-      </label>
+      </label> */}
     </div>
   );
 };

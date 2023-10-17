@@ -28,7 +28,7 @@
   }
 
   &__title {
-    @include font;
+    @include fontNobile;
     @include text-large;
     color: black;
     margin-top: 52px;

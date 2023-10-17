@@ -14,8 +14,8 @@ const Footer = ({ theme }) => {
                 : "footer__title"
             }
           >
-            Балтымский
-            <br /> Кирпичный&nbsp;ЗАВОД
+            Кирпичный&nbsp;ЗАВОД
+            <br /> Балтымский
           </p>
           <p className="footer__address">
             <b>Екатеринбург,</b> <br /> пос.&nbsp;Садовый,

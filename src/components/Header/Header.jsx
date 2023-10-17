@@ -1,19 +1,23 @@
-import Logo from "../../images/Logo 1.svg";
+import Logo from "./images/newLogo.svg";
 import "./Header.scss";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className="header">
       <section className="header__content">
         <div className="header__item">
-          <img
-            src={Logo}
-            className="header__logo"
-            alt="логотип балтымского кирпичного завода"
-          />
+          <Link to="/" className="header__link">
+            <img
+              src={Logo}
+              className="header__logo"
+              alt="логотип балтымского кирпичного завода"
+            />
+          </Link>
           <h1 className="header__title">
+            Кирпичный&nbsp;ЗАВОД
+            <br />
             Балтымский
-            <br /> Кирпичный&nbsp;ЗАВОД
           </h1>
           <p className="header__address">
             <b>Екатеринбург,</b> <br /> пос.&nbsp;Садовый,

@@ -4,6 +4,7 @@
 .page-photo {
   min-height: 70vh;
   padding: 0 157px 0;
+  margin-bottom: 54px;
 
   &__header-image {
     width: 1127px;
@@ -13,6 +14,7 @@
   }
 
   &__title {
+    @include fontNobile;
     @include text-large;
     color: black;
     margin: 52px auto 40px;
