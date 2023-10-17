@@ -6,6 +6,7 @@
   padding: 0 156px;
 
   &__title {
+    @include fontNobile;
     @include text-large;
     text-align: center;
     margin: 52px 0 40px;
@@ -32,7 +33,9 @@
 
   &__title {
     @include text-large;
+    @include fontNobile;
     margin: 0 0 8px;
+    text-align: left;
   }
 
   &__text {

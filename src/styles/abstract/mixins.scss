@@ -2,6 +2,10 @@
   font-family: "Nunito San", Inter, sans-serif;
 }
 
+@mixin fontNobile {
+  font-family: Nobile, sans-serif;
+}
+
 @mixin text-medium {
   font-size: 18px;
   font-weight: 400;
@@ -22,6 +26,7 @@
   border-radius: 24px;
   padding: 10px;
   cursor: pointer;
+  color: #7a7a7a;
 
   &::placeholder {
     color: $input-placeholder;

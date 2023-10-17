@@ -19,7 +19,6 @@ export const NavigationAdress = () => {
   }
 
   const currentUrl = translateUrl();
-  console.log(currentUrl);
 
   return (
     <div className="navigation-adress">
