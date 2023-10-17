@@ -8,6 +8,7 @@ import brick4 from "./image/brick4.png";
 import brick5 from "./image/brick5.png";
 import brick6 from "./image/brick6.png";
 import brick7 from "./image/brick7.png";
+import brick8 from "./image/1.jpg";
 import { Modal } from "./components/Modal/Modal";
 import { useState } from "react";
 import { NavigationAdress } from "../../components/NavigationAdress/NavigationAdress";
