@@ -60,7 +60,7 @@ export const ContactUsSmall = () => {
       />
 
       <button type="submit" className="contact-us-small__submit-btn">
-        Перезвонить
+        <div className="animation"><span className="text">Перезвонить</span><div className="iqon" /></div>
       </button>
     </form>
   );
