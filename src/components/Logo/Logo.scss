@@ -14,54 +14,63 @@
     left: 1px;
     animation: brick1 4s infinite linear;
   }
+
   &__brick2 {
     position: absolute;
     top: 2px;
     left: 30px;
     animation: brick2 4s infinite linear;
   }
+
   &__brick3 {
     position: absolute;
     top: 13px;
     left: 1px;
     animation: brick3 4s infinite linear;
   }
+
   &__brick4 {
     position: absolute;
     top: 13px;
     left: 30px;
     animation: brick4 4s infinite linear;
   }
+
   &__brick5 {
     position: absolute;
     top: 24px;
     left: 1px;
     animation: brick5 4s infinite linear;
   }
+
   &__brick6 {
     position: absolute;
     top: 24px;
     left: 30px;
     animation: brick6 4s infinite linear;
   }
+
   &__brick7 {
     position: absolute;
     top: 35px;
     left: 1px;
     animation: brick7 4s infinite linear;
   }
+
   &__brick8 {
     position: absolute;
     top: 35px;
     left: 30px;
     animation: brick8 4s infinite linear;
   }
+
   &__brick9 {
     position: absolute;
     top: 46px;
     left: 1px;
     animation: brick9 4s infinite linear;
   }
+
   &__brick10 {
     position: absolute;
     top: 46px;
@@ -69,6 +78,7 @@
     animation: brick10 4s infinite linear;
   }
 }
+
 @keyframes brick10 {
   0% {
     top: -12px;
@@ -86,12 +96,12 @@
     top: 46px;
   }
 }
+
 @keyframes brick9 {
   0% {
     top: -12px;
   }
   10% {
-
     top: -12px;
   }
   15% {
@@ -104,9 +114,10 @@
     top: 46px;
   }
 }
+
 @keyframes brick8 {
   0% {
-    top: -12px
+    top: -12px;
   }
   15% {
     top: -12px;
@@ -121,6 +132,7 @@
     top: 35px;
   }
 }
+
 @keyframes brick7 {
   0% {
     top: -12px;
@@ -138,6 +150,7 @@
     top: 35px;
   }
 }
+
 @keyframes brick6 {
   0% {
     top: -12px;
@@ -155,6 +168,7 @@
     top: 24px;
   }
 }
+
 @keyframes brick5 {
   0% {
     top: -12px;
@@ -172,6 +186,7 @@
     top: 24px;
   }
 }
+
 @keyframes brick4 {
   0% {
     top: -12px;
@@ -189,6 +204,7 @@
     top: 13px;
   }
 }
+
 @keyframes brick3 {
   0% {
     top: -12px;
@@ -206,9 +222,11 @@
     top: 13px;
   }
 }
+
 @keyframes brick2 {
   0% {
-    top: -12px;}
+    top: -12px;
+  }
 
   45% {
     top: -12px;
@@ -223,6 +241,7 @@
     top: 2px;
   }
 }
+
 @keyframes brick1 {
   0% {
     top: -12px;
