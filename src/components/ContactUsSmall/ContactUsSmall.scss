@@ -43,8 +43,46 @@
     cursor: pointer;
     transition: 1s;
     color: #070707;
+    position: relative;
+    overflow: hidden;
     &:hover {
       opacity: 0.7;
     }
   }
+}
+
+.text {
+  background-color: #ffff;
+  width: 168px;
+  height: 40px;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+  position: absolute;
+ top: 0;
+ left: 0;
+}
+.iqon {
+  width: 168px;
+  height: 40px;
+  background-color: #F5F4EF;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-image: url(./iqons/smartphone_FILL0_wght400_GRAD0_opsz24.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.animation {
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.animation:hover {
+  top: -40px;
+  transition: top 0.1s ease-in-out 0.1s;
 }
