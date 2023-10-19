@@ -1,5 +1,4 @@
 //Отдел снабжения
-import { Link } from "react-router-dom";
 import { ContactUsSmall } from "../ContactUsSmall/ContactUsSmall";
 import TwoColumns from "../TwoColumns/TwoColumns";
 import './Supply.scss'
@@ -10,10 +9,10 @@ const Supply = () => {
   return (
     <Layout theme="white">
       <div className="supply">
-        <nav className="supply__nav">
+        {/* <nav className="supply__nav">
           <Link to="/" className="supply__nav-text supply__nav-text_link">Главная</Link>
           <p className="supply__nav-text">/Снабжение</p>
-        </nav>
+        </nav> */}
         <h2 className="supply__title">Отдел снабжения</h2>
         <TwoColumns>
           <div className="supply__contacts">
