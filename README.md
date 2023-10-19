@@ -11,7 +11,7 @@
 
 сайт можно открыть по ссылке
 
-https://pyctam-ac.github.io/brick-field/index.html
+https://pyctam-ac.github.io/brick-field
 
 ---
 сайт в стадии разработки:
