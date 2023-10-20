@@ -1,6 +1,7 @@
 import "./PageContacts.scss";
 import { Layout } from "../../Layout/Layout";
 import { ContactUsLarge } from "../../components/ContactUsLarge/ContactUsLarge";
+import { YandexMap } from "../../components/YandexMap/YandexMap";
 
 export const PageContacts = () => {
   return (
@@ -32,6 +33,9 @@ export const PageContacts = () => {
             <h3 className="info-item__title">E-mail</h3>
             <p className="info-item__text">2060248@mail.ru</p>
           </div>
+        </div>
+        <div className="contacts__map">
+          <YandexMap />
         </div>
         <p className="contacts__order">
           Заказать стройматериалы, вы можете по телефону или заполнив форму
