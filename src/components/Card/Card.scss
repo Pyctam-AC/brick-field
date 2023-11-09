@@ -1,0 +1,45 @@
+@import "../../styles/abstract/constants.scss";
+@import "../../styles/abstract/mixins.scss";
+
+.card {
+  width: 168px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+  }
+
+  &__wrapper:hover {
+    scale: 1.2;
+  }
+
+  &__image {
+    width: 168px;
+    height: 168px;
+  }
+
+  &__title {
+    margin: 15px 13px 0 13px;
+    text-align: center;
+    max-width: 144px;
+    min-height: 116px;
+    color: $dark_text;
+    @include text-medium;
+  }
+
+  &__textarea {
+    background-color: #f5f4ef;
+    min-height: 131px;
+    transform: scale(1);
+    box-shadow: inset 0px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  }
+}

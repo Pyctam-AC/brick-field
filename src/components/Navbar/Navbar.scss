@@ -1,0 +1,22 @@
+@import "../../styles/abstract/constants.scss";
+@import "../../styles/abstract/mixins.scss";
+
+.navbar {
+  margin: 22px 156px 21px 156px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  &__link {
+    font-family: "Nunito San";
+    @include text-medium;
+    color: $dark_text;
+    text-decoration: none;
+  }
+
+  &__link_active {
+    color: #da9255;
+  }
+
+
+}

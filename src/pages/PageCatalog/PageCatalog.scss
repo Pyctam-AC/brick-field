@@ -1,0 +1,23 @@
+@import "../../styles/abstract/mixins.scss";
+.page-catalog {
+  background-color: #fff;
+  width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__title {
+    @include text-large;
+    font-family: Nobile, sans-serif;
+    color: #070707;
+    margin-top: 56px;
+    margin-bottom: 40px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 52px;
+  }
+}

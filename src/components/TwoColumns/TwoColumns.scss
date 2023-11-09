@@ -1,0 +1,11 @@
+@import "../../styles/abstract/mixins.scss";
+
+.twoColumns {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 552px);
+  grid-template-rows: repeat(1, 312px);
+  gap: 24px;
+  max-width: 1128px;
+  justify-content: space-between;
+}

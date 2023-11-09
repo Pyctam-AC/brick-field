@@ -1,0 +1,44 @@
+@mixin font {
+  font-family: "Nunito San", Inter, sans-serif;
+}
+
+@mixin fontNobile {
+  font-family: Nobile, sans-serif;
+}
+
+@mixin text-medium {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.11;
+}
+
+@mixin text-large {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+@mixin input {
+  width: 168px;
+  height: 40px;
+  background-color: $input-backgroud;
+  border: none;
+  border-radius: 24px;
+  padding: 10px;
+  cursor: pointer;
+  color: #7a7a7a;
+
+  &::placeholder {
+    color: $input-placeholder;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    border: 1px #7a7a7a solid;
+  }
+}

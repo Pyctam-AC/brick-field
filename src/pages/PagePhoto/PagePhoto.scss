@@ -1,0 +1,60 @@
+@import "../../styles/abstract/mixins.scss";
+@import "../../styles/abstract/constants.scss";
+
+.page-photo {
+  min-height: 70vh;
+  padding: 0 157px 0;
+  margin-bottom: 54px;
+
+  &__header-image {
+    width: 1127px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0;
+  }
+
+  &__title {
+    @include fontNobile;
+    @include text-large;
+    color: black;
+    margin: 52px auto 40px;
+  }
+
+  &__gallery {
+    height: 540px;
+    max-width: 1128px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 172px);
+    gap: 12px;
+  }
+
+  &__gallery-item {
+    cursor: pointer;
+    transition: 1s;
+    width: 100%;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:nth-child(3) {
+      grid-column: 3;
+      grid-row: 1/2;
+    }
+
+    &:nth-child(4) {
+      grid-column: 1;
+      grid-row: 2/3;
+    }
+    &:nth-child(6) {
+      grid-column: 2;
+      grid-row: 3;
+    }
+    &:nth-child(7) {
+      grid-column: 3;
+      grid-row: 3;
+      object-fit: cover;
+    }
+  }
+}

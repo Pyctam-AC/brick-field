@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Nunito San";
+  src: local("Inter-Regular"), local("NotoSans-Bold"),
+    url("NotoSans.woff2") format("woff2"), url("NotoSans.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Nunito San";
+  src: local("Inter-Regular"), local("NotoSans-Bold"),
+    url("NotoSans-Bold.woff2") format("woff2"),
+    url("NotoSans-Bold.woff1") format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Nunito San";
+  src: local("Inter-Regular"), local("NotoSans-Bold"),
+    url("NotoSans-Bold.woff2") format("woff2"),
+    url("NotoSans-Bold.woff1") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'FiraSansCondensed';
+  src: url("./FiraSansCondensed-Bold.woff") format("woff2"),
+       url("./FiraSansCondensed-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Nobile';
+  src: url("./Nobile-Medium.woff") format("woff"),
+       url("./Nobile-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
